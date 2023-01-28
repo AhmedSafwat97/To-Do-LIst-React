@@ -1,0 +1,12 @@
+.Home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

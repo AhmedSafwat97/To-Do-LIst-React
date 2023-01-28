@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+
+.App button {
+  margin: 0 10px;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.App button:hover {
+transform: scale(0.8);
+background-color: yellow;
+}
+
