@@ -1,0 +1,25 @@
+
+  @keyframes Move {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
+
+.load{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.loading{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border-top: 5px solid  #dc3545;
+    border-right: 5px solid  #dc3545;
+  
+    animation: Move 1s infinite linear;
+  }
+  
