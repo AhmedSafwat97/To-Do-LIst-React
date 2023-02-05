@@ -9,15 +9,32 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
+
+.Headerrr{
+    width: 100%;
+    height: 30px;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.Headerrr h1{
+    font-size: 40px;
+}
+
+.img2{
+    width: 300px;
+}
+
+
 .Sign{
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
 }
 
 .The-box{
@@ -25,8 +42,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
-    height: 550px;
+    width: 370px;
+    height: 500px;
     background-color: transparent;
     border: 4px solid var(--Light);
     border-radius: 15px;
@@ -34,14 +51,15 @@
 }
 
 .The-box:hover{
-    border: 4px solid #00FFD1;
-    box-shadow: 0 0 20px #00FFD1 , inset 0 0 20px #31C604;
+    border: 2px solid #00FFD1;
 }
+
 
 .Sign h2{
     font-size: 32px;
     text-align: center;
 }
+
 
 .input-box{
     position: relative;
@@ -57,7 +75,6 @@
     outline: none;
     padding: 0 10px 0 35px;
     transition: 0.5s;
-    background: transparent;
     color: var(--white-color);
 }
 
@@ -66,12 +83,36 @@
     color: rgba(255, 255, 255, 0.3);
 }
 
-.The-box:hover .input-box input {
-
-    border: 4px solid #00FFD1;
-    box-shadow: 0 0 20px #00FFD1 , inset 0 0 20px #31C604;
+.dark .input-box input{
+    background-color: #242424;
 }
 
+.dark .The-box:hover .input-box input {
+    border: 1px solid black;
+}
+/* fo the Light Mood */
+
+.Light .The-box{
+    border: 1px solid black;
+}
+
+.Light .The-box:hover{
+    border: 2px solid black;
+    box-shadow: none ;
+}
+
+.Light .input-box input {
+    color: black;
+}
+
+.Light .input-box input::placeholder {
+    color: gray;
+}
+
+.Light .The-box:hover .input-box input {
+    border: 1px solid black;
+    box-shadow: none;
+ }
 
 .Sign .icon{
     font-size: 25px;
@@ -124,15 +165,3 @@
     justify-content: center;
 }
 
-.delete{
-    padding: 10px;
-    background-color: red;
-    outline: none;
-    border: none;
-    border-radius: 6px;
-    color: white;
-}
-
-.delete:hover{
-    transform: scale(0.9);
-}

@@ -1,0 +1,15 @@
+.Footer{
+    background-color: gray;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 800px) {
+    .Footer h4 {
+        font-size: 15px;
+        font-weight: 700;
+    }
+}

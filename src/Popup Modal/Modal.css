@@ -1,0 +1,48 @@
+
+.Modal input{
+    margin: 10px 10px;
+    padding: 5px 10px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+}
+
+.Modal button{
+    padding: 10px;
+    border-radius: 7px;
+}
+
+
+.Modal button:hover{
+    transform: scale(0.9);
+}
+
+
+@keyframes mymove {
+    0%   {  scale: 0; transform: translateY(-50vh);}
+    100% {  scale: 1; transform: translateY(0);}
+  } 
+
+  .Modal{
+    animation: mymove  0.8s ;
+  }
+
+
+  
+.Message {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 6px solid red;
+    font-size: 20px;
+    position: fixed;
+    bottom: 50px;
+    transition: 1s;
+}

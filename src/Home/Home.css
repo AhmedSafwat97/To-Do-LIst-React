@@ -1,0 +1,189 @@
+:root {
+    --neon-color : #a5f1e9;
+    --white-color: #fff;
+    --main : #051527;
+    --Light : #0A2647;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.Notuser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes MOving {
+    0% { opacity: 0.2} 
+    50% {opacity: 0.5}
+    75% {opacity: 0.8}
+    100% { opacity: 1 }
+}
+
+.home-message{
+    animation: MOving infinite 2s;
+    transition: 2s;
+    
+}
+
+
+.Home{
+    width: 100%;
+    height:90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.v-message{
+    text-align: center;
+}
+
+
+.add-new{
+    width: 80%;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.btns-filter{
+    display: flex;
+    align-items: baseline;
+}
+
+.add-btn{
+    padding: 10px;
+    background-color: red;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    margin: 0 10px;
+}
+
+.add-btn:hover{
+    transform: scale(0.9);
+}
+
+.Card-area{
+    padding: 20px;
+    width: 80%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill ,  minmax(250px,1fr));
+    gap: 10px;
+}
+
+.empty-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.img-home1{
+width: 200px;
+}
+
+.cards-container{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.Card-item{
+    padding: 10px;
+    height: fit-content;
+    border: 1px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+}
+
+ .Card-item .to {
+    color: white;
+}
+
+.Card-item:hover{
+    border: 1px solid #00FFD1;
+}
+
+/* at the dark mood */
+
+.dark .Card-item{
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: transparent;
+}
+
+.dark .Card-item .to {
+    color: white;
+}
+
+.Light .Card-item {
+    background-color: #EEE;
+    border: 1px solid black;
+}
+
+.Light .Card-item .to {
+    color: black;
+} 
+
+.Light .Card-item:hover{
+    border: 2px solid red;
+    box-shadow: none
+}
+
+
+.Head-list{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.Head-list h4{
+    font-size: 18px;
+}
+
+
+.time{
+    direction: rtl;
+}
+
+.Filter-btn{
+    padding: 10px;
+    width: 100px;
+    background-color: gray;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    margin: 10px 10px;
+    font-size: 15px;
+}
+
+.Filter-btn:hover{
+    transform: scale(0.9);
+
+}
+
+#Select-filter{
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 42px;
+    border-radius: 6px;
+    text-align: center;
+    border: none;
+}
+

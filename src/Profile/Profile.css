@@ -1,0 +1,82 @@
+.profile{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.delete-btn{
+    padding: 10px;
+    width: 120px;
+    background-color: red;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    margin: 10px 10px;
+    font-size: 15px;
+}
+
+.delete-btn:hover{
+    transform: scale(0.9);
+
+}
+
+.img-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+
+}
+
+.user-image{
+    background-color: #EEE;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid ;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.person1-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+    margin: 3px 0;
+
+}
+
+.person2-img{
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    border-bottom: none;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    cursor: pointer;
+
+}
+
+@media (max-width: 800px) {
+    .info h2{
+        font-size: 23px;
+
+    }
+
+    .img-p{
+        margin-right: 0px;    
+    }
+    .info{
+        text-align: center;
+    }
+}

@@ -17,6 +17,8 @@ const Forgotpass = () => {
     const [showSendEmail, setshowSendEmail] = useState(false);
     const [firebaseError, setfirebaseError] = useState("");
 
+
+
   return (
     <>
       <HelmetProvider>
@@ -92,7 +94,7 @@ const Forgotpass = () => {
             </button>
             <div className="register">
               <p>
-                Don't have an account ? <Link to="/Signin">Sign in</Link>
+                Return to ? <Link to="/Signin">Sign in</Link>
               </p>
             </div>
           </form>
